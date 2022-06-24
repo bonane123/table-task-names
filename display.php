@@ -30,7 +30,9 @@ include ('connection.php');
                         <td><?php echo $row['id'];?></td>
                         <td><?php echo $row['name'];?></td>
                         <td><?php echo $row['location'];?></td>
-                        <td><a href="delete.php?user_id=<?php echo $row['id'];?>">delete</a></td>
+                        <td><a href="delete.php?id=<?php echo $row['id'];?>">delete</a></td>
+                        <td><a href="update.php?id=<?php echo $row['id'];?>">update</a></td>
+                        
                     </tr>
                 <?php
             }

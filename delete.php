@@ -1,7 +1,7 @@
 <?php
 include('connection.php');
 
-$sql = "DELETE FROM data WHERE id = " . $_GET["user_id"] . "";
+$sql = "DELETE FROM data WHERE id = " . $_GET["id"] . "";
 
 $result = mysqli_query($conn, $sql);
 if($result){
